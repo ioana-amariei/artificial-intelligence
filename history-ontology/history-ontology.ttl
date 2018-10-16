@@ -1,0 +1,908 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carpathian_Mountains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_War_of_Independence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/predecessor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Constitution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/commander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/page/Domnitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PersonFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ottoman_Empire"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Sinaia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/startReign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Europe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Castle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/War"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/spouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/page/City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_Academy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/placeOfBurial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/activeYears"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Continent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/property/continent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Russo-Turkish_War"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/successor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/page/King_of_the_Romanians"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ferdinand_I_of_Romania"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/page/Category:Castles_in_Romania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/page/War"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/monarch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/HistoricalPeriod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/property/constructed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/property/signers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/1866_Constitution_of_Romania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/TimePeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/endReign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Alexandru_Ioan_Cuza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MilitaryConflict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/member"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Location"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/page/Domnitor"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Castle"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+        <Class IRI="http://dbpedia.org/ontology/Constitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HistoricalPeriod"/>
+        <Class IRI="http://dbpedia.org/ontology/TimePeriod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/page/Domnitor"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/page/King_of_the_Romanians"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/page/War"/>
+        <Class IRI="http://dbpedia.org/ontology/MilitaryConflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/page/Category:Castles_in_Romania"/>
+        <Class IRI="http://dbpedia.org/ontology/Castle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/page/Domnitor"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Alexandru_Ioan_Cuza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/page/King_of_the_Romanians"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Location"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carpathian_Mountains"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Continent"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ferdinand_I_of_Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ottoman_Empire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Organisation"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_Academy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/MilitaryConflict"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_War_of_Independence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/page/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Sinaia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/1866_Constitution_of_Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Castle"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/page/Category:Castles_in_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+        <NamedIndividual IRI="http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/HistoricalPeriod"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/TimePeriod"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Location"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/PersonFunction"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_War_of_Independence"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Russo-Turkish_War"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/page/1866_Constitution_of_Romania"/>
+        <NamedIndividual IRI="http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/predecessor"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Alexandru_Ioan_Cuza"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/activeYears"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/commander"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_War_of_Independence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/endReign"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/member"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romanian_Academy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/monarch"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/placeOfBurial"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/residence"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/spouse"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/startReign"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/property/constructed"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/property/signers"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/1866_Constitution_of_Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carpathian_Mountains"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/spouse"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/successor"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ferdinand_I_of_Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://dbpedia.org/property/continent"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Ottoman_Empire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Carpathian_Mountains"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Sinaia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Romania"/>
+    </ObjectPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/commander"/>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leader"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/location"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/commander"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/predecessor"/>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/successor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/activeYears"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/commander"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/leader"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/member"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/placeOfBurial"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/predecessor"/>
+        <Class IRI="http://dbpedia.org/page/King_of_the_Romanians"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/residence"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/spouse"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/successor"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation"/>
+        <Class IRI="http://dbpedia.org/ontology/PersonFunction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <Class IRI="http://dbpedia.org/page/City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/monarch"/>
+        <Class IRI="http://dbpedia.org/ontology/Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/residence"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/spouse"/>
+        <Class IRI="http://dbpedia.org/ontology/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/successor"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion"/>
+        <Class IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <Class IRI="http://dbpedia.org/page/City"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/Castle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a large building formerly occupied by a ruler and fortified against attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/Country</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a politically organized body of people under a single government) &quot;the state has elected a new president&quot;; &quot;African nations&quot;; &quot;students who had come to the nation&apos;s capitol&quot;; &quot;the country&apos;s largest manufacturer&quot;; &quot;an industrialized land&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/activeYears</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">was active between</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/commander</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a commander of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/endReign</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has ended reign in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/leader</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a leader of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/location</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/member</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a member of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/monarch</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a monarch of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/placeOfBurial</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has place of burial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/predecessor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has predecessor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/residence</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has residence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/spouse</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has spouse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/startReign</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has started reign in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/successor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is successor of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/page/Pele%C8%99_Castle</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Peles Castle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/property/constructed</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has constructed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/property/continent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is on continent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/property/signers</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is a signer of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An empire is defined as &quot;an aggregate of nations or people ruled over by an emperor or other powerful sovereign or government, usually a territory of greater extent than a kingdom, as the former British Empire, French Empire, Russian Empire, Byzantine Empire or Roman Empire.&quot; An empire can be made solely of contiguous territories such as the Austro-Hungarian Empire, or of territories far remote from the homeland, such as a colonial empire.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Political Figure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has citizenship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has honor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has occupation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has omage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has religion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has gained independence in the face of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is located in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is subject of</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

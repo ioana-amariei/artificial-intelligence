@@ -1,0 +1,1174 @@
+{
+  "Ontology": {
+    "-xmlns": "http://www.w3.org/2002/07/owl#",
+    "-xml:base": "http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology",
+    "-xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "-xmlns:xml": "http://www.w3.org/XML/1998/namespace",
+    "-xmlns:xsd": "http://www.w3.org/2001/XMLSchema#",
+    "-xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "-ontologyIRI": "http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology",
+    "Prefix": [
+      {
+        "-name": "owl",
+        "-IRI": "http://www.w3.org/2002/07/owl#"
+      },
+      {
+        "-name": "rdf",
+        "-IRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      },
+      {
+        "-name": "xml",
+        "-IRI": "http://www.w3.org/XML/1998/namespace"
+      },
+      {
+        "-name": "xsd",
+        "-IRI": "http://www.w3.org/2001/XMLSchema#"
+      },
+      {
+        "-name": "rdfs",
+        "-IRI": "http://www.w3.org/2000/01/rdf-schema#"
+      }
+    ],
+    "Declaration": [
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Carpathian_Mountains" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romanian_War_of_Independence" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/predecessor" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/residence" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Location" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Constitution" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/commander" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romania" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/Domnitor" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/PersonFunction" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Ottoman_Empire" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/leader" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Organisation" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Sinaia" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/startReign" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Europe" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Castle" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/War" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/spouse" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/City" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romanian_Academy" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/placeOfBurial" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/activeYears" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Continent" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/continent" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Russo-Turkish_War" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/successor" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/King_of_the_Romanians" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Ferdinand_I_of_Romania" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/location" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/Category:Castles_in_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/War" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/monarch" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Elisabeth_of_Wied" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Constitution_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/HistoricalPeriod" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Country" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/constructed" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/signers" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Place" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/1866_Constitution_of_Romania" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/TimePeriod" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/endReign" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Alexandru_Ioan_Cuza" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/MilitaryConflict" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/member" }
+      },
+      {
+        "NamedIndividual": { "-IRI": "http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania" }
+      }
+    ],
+    "EquivalentClasses": [
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Country" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Country" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Country" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Location" },
+          { "-IRI": "http://dbpedia.org/ontology/Place" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/page/Domnitor" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+        ]
+      }
+    ],
+    "SubClassOf": [
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Castle" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/Constitution_of_Romania" },
+          { "-IRI": "http://dbpedia.org/ontology/Constitution" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/ontology/HistoricalPeriod" },
+          { "-IRI": "http://dbpedia.org/ontology/TimePeriod" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/page/Domnitor" },
+          { "-IRI": "http://dbpedia.org/ontology/Person" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/page/King_of_the_Romanians" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/page/War" },
+          { "-IRI": "http://dbpedia.org/ontology/MilitaryConflict" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://dbpedia.org/page/Category:Castles_in_Romania" },
+          { "-IRI": "http://dbpedia.org/ontology/Castle" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" },
+          { "-IRI": "http://dbpedia.org/ontology/Person" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours" }
+        ]
+      },
+      {
+        "Class": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument" }
+        ]
+      }
+    ],
+    "ClassAssertion": [
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/Domnitor" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Alexandru_Ioan_Cuza" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/King_of_the_Romanians" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Location" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Carpathian_Mountains" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Elisabeth_of_Wied" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Continent" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Europe" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Ferdinand_I_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Ottoman_Empire" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Country" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Organisation" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romanian_Academy" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/MilitaryConflict" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Romanian_War_of_Independence" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/City" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Sinaia" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Constitution_of_Romania" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/1866_Constitution_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Castle" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/page/Category:Castles_in_Romania" },
+        "NamedIndividual": { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Constitution_of_Romania" },
+        "NamedIndividual": { "-IRI": "http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/HistoricalPeriod" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/TimePeriod" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Location" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism" }
+      },
+      {
+        "Class": { "-IRI": "http://dbpedia.org/ontology/PersonFunction" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian" }
+      },
+      {
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours" },
+        "NamedIndividual": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania" }
+      }
+    ],
+    "SameIndividual": [
+      {
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen" },
+          { "-IRI": "http://dbpedia.org/page/Elisabeth_of_Wied" }
+        ]
+      },
+      {
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia" }
+        ]
+      },
+      {
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Romanian_War_of_Independence" },
+          { "-IRI": "http://dbpedia.org/page/Russo-Turkish_War" }
+        ]
+      },
+      {
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/1866_Constitution_of_Romania" },
+          { "-IRI": "http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania" }
+        ]
+      }
+    ],
+    "ObjectPropertyAssertion": [
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/predecessor" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Alexandru_Ioan_Cuza" },
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/activeYears" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/commander" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Romanian_War_of_Independence" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/endReign" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/member" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Romanian_Academy" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/monarch" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/placeOfBurial" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/residence" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/spouse" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Elisabeth_of_Wied" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/startReign" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/constructed" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/signers" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/1866_Constitution_of_Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Carpathian_Mountains" },
+          { "-IRI": "http://dbpedia.org/page/Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/spouse" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Elisabeth_of_Wied" },
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/successor" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Ferdinand_I_of_Romania" },
+          { "-IRI": "http://dbpedia.org/page/Carol_I_of_Romania" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/property/continent" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Romania" },
+          { "-IRI": "http://dbpedia.org/page/Europe" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Romania" },
+          { "-IRI": "http://dbpedia.org/page/Ottoman_Empire" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" },
+          { "-IRI": "http://dbpedia.org/page/Carpathian_Mountains" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "NamedIndividual": [
+          { "-IRI": "http://dbpedia.org/page/Pele%C8%99_Castle" },
+          { "-IRI": "http://dbpedia.org/page/Sinaia" }
+        ]
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "NamedIndividual": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery" },
+          { "-IRI": "http://dbpedia.org/page/Romania" }
+        ]
+      }
+    ],
+    "EquivalentObjectProperties": [
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://dbpedia.org/ontology/commander" },
+          { "-IRI": "http://dbpedia.org/ontology/leader" }
+        ]
+      },
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://dbpedia.org/ontology/location" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" }
+        ]
+      }
+    ],
+    "SubObjectPropertyOf": [
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://dbpedia.org/ontology/commander" },
+          { "-abbreviatedIRI": "owl:topObjectProperty" }
+        ]
+      },
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation" },
+          { "-abbreviatedIRI": "owl:topObjectProperty" }
+        ]
+      },
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle" },
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage" }
+        ]
+      },
+      {
+        "ObjectProperty": [
+          { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+          { "-abbreviatedIRI": "owl:topObjectProperty" }
+        ]
+      }
+    ],
+    "InverseObjectProperties": {
+      "ObjectProperty": [
+        { "-IRI": "http://dbpedia.org/ontology/predecessor" },
+        { "-IRI": "http://dbpedia.org/ontology/successor" }
+      ]
+    },
+    "ObjectPropertyDomain": [
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/activeYears" },
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/commander" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/leader" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/member" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/placeOfBurial" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/predecessor" },
+        "Class": { "-IRI": "http://dbpedia.org/page/King_of_the_Romanians" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/residence" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/spouse" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/successor" },
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/PersonFunction" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "Class": { "-IRI": "http://dbpedia.org/page/City" }
+      }
+    ],
+    "ObjectPropertyRange": [
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/monarch" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Location" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/residence" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Place" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/spouse" },
+        "Class": { "-IRI": "http://dbpedia.org/ontology/Person" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://dbpedia.org/ontology/successor" },
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion" },
+        "Class": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion" }
+      },
+      {
+        "ObjectProperty": { "-IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn" },
+        "Class": { "-IRI": "http://dbpedia.org/page/City" }
+      }
+    ],
+    "AnnotationAssertion": [
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:comment" },
+        "IRI": "http://dbpedia.org/ontology/Castle",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "a large building formerly occupied by a ruler and fortified against attack"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:comment" },
+        "IRI": "http://dbpedia.org/ontology/Country",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "a politically organized body of people under a single government) \"the state has elected a new president\"; \"African nations\"; \"students who had come to the nation's capitol\"; \"the country's largest manufacturer\"; \"an industrialized land\""
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/activeYears",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "was active between"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/commander",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is a commander of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/endReign",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has ended reign in"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/leader",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is a leader of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/location",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has location"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/member",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is a member of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/monarch",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is a monarch of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/placeOfBurial",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has place of burial"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/predecessor",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/2001/XMLSchema#string",
+          "#text": "has predecessor"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/residence",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/2001/XMLSchema#string",
+          "#text": "has residence"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/spouse",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/2001/XMLSchema#string",
+          "#text": "has spouse"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/startReign",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has started reign in"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/ontology/successor",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is successor of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/page/Pele%C8%99_Castle",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "Peles Castle"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/property/constructed",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has constructed"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/property/continent",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is on continent"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://dbpedia.org/property/signers",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is a signer of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:comment" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire",
+        "Literal": {
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "An empire is defined as \"an aggregate of nations or people ruled over by an emperor or other powerful sovereign or government, usually a territory of greater extent than a kingdom, as the former British Empire, French Empire, Russian Empire, Byzantine Empire or Roman Empire.\" An empire can be made solely of contiguous territories such as the Austro-Hungarian Empire, or of territories far remote from the homeland, such as a colonial empire."
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "Political Figure"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has citizenship"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has honor"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has occupation"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has omage"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has religion"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has title"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "has gained independence in the face of"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is located in"
+        }
+      },
+      {
+        "AnnotationProperty": { "-abbreviatedIRI": "rdfs:label" },
+        "IRI": "http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf",
+        "Literal": {
+          "-xml:lang": "en",
+          "-datatypeIRI": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+          "#text": "is subject of"
+        }
+      }
+    ]
+  }
+}

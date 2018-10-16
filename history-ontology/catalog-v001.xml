@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1539709932924" name="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology" uri="history-ontology.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1539709932924" name="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10" uri="tbox/history-ontology.owl"/>
+    </group>
+</catalog>
