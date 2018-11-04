@@ -1,0 +1,23 @@
+1. interfata in care deschidem pdf si marcam continutul: articol (titlu, autor, continut) -> salvam marcajele (imaginea ca atare si coordonate)
+din format => scoate date antrenament de folosit si OCR (lista atribute: colt dreapta sus, colt dreapata jos, font, etc)
+ocr - tesseract
+
+tema pt 3 sapt
+1. impartire pe submodule: 
+	- front-end (interfata adnotare + interfata ce decupeaza automat pe baza clasificatorului creat de noi): document cu aplicatii similare existente (open source) cu +/-
+		si justificare tehnologii si biblioteci alese
+	- back-end: prelucreaza output-ul trimis de front -> ocr -> atribute -> clasificatori -> trimitere inf front
+		tehnologii ce identif din imagini diverse lucruri, justificare tehnologii si biblioteci, MVC , solutii optimizare interfata-server
+		de decis formatul in care ne trimite front-ul adnotarile, alg de ml existenti justificare ()+/-
+		de decis formatul final al clasificatorilor
+	- testare: lista teste ce urm a fi facute (ce funct testam si ce erori se cauta)
+		colectare date: pregatire date de antrenare (adnotarea)
+		manual utilizare aplicatie
+	- team leader: gestionare comunicare interior echipa si exterior
+		pagina de prezentare a proiectului
+		repository
+		divergente
+		tabele cu activitatile la care a contribuit fiecare
+		
+de trimis cu 2/3 zile inainte documentatia
+	
