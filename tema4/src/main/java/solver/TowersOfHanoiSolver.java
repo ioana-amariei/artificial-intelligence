@@ -1,15 +1,17 @@
-package strategy;
+package solver;
 
 import model.Disk;
 import model.Rod;
 import model.State;
 import model.Transition;
+import solver.strategy.api.HanoiStrategy;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class TowersOfHanoiRandomSolver {
-    boolean solvable;
+public class TowersOfHanoiSolver {
+    private HanoiStrategy solvingStrategy;
+    private boolean solvable;
     private State currentState;
     private State initialState;
     private State finalState;
@@ -23,7 +25,8 @@ public class TowersOfHanoiRandomSolver {
     private int solvableBoundTransitions;
 
 
-    public TowersOfHanoiRandomSolver(int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
+    public TowersOfHanoiSolver(HanoiStrategy solvingStrategy, int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
+        this.solvingStrategy = solvingStrategy;
         this.numberOfDisks = numberOfDisks;
         this.numberOfRods = numberOfRods;
         this.solvable = true;
@@ -45,7 +48,7 @@ public class TowersOfHanoiRandomSolver {
                 System.out.println("There are no viable transitions");
                 restartSearch();
             } else {
-                State nextState = selectNextState(viableTransitions);
+                State nextState = solvingStrategy.selectNextState(viableTransitions);
                 currentState = nextState;
                 visitedStates.add(nextState);
             }
@@ -77,13 +80,6 @@ public class TowersOfHanoiRandomSolver {
         remainingTransitions = maxTransitions;
         currentState = initialState;
         visitedStates.clear();
-    }
-
-    private State selectNextState(Set<State> viableTransitions) {
-        int bound = viableTransitions.size();
-        int randomPosition = new Random(System.currentTimeMillis()).nextInt(bound);
-
-        return new LinkedList<>(viableTransitions).get(randomPosition);
     }
 
     private Set<State> computeViableTransitionsFrom(State currentState) {
