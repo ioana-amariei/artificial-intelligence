@@ -1,3 +1,5 @@
+package model;
+
 public class Transition {
     private int disk;
     private int fromRod;
@@ -11,7 +13,7 @@ public class Transition {
 
     @Override
     public String toString() {
-        return "Transition{" +
+        return "model.Transition{" +
                 "disk=" + disk +
                 ", fromRod=" + fromRod +
                 ", toRod=" + toRod +

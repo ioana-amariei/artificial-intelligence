@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package model;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -35,7 +36,6 @@ public class Rod {
 
     public Disk removeFirst() {
         // remove a disk from the end of the list
-//        System.out.println(Arrays.toString(disks.toArray()));
         Disk disk = disks.get(disks.size() - 1);
         disks.remove(disks.size() - 1);
 
@@ -60,7 +60,7 @@ public class Rod {
 
     @Override
     public String toString() {
-        return "Rod{" +
+        return "model.Rod{" +
                 "number=" + number +
                 ", disks=" + disks +
                 '}';

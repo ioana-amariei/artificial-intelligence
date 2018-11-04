@@ -1,33 +1,82 @@
+package strategy;
+
+import model.Disk;
+import model.Rod;
+import model.State;
+import model.Transition;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class TowersOfHanoiRandomSolver {
+    boolean solvable;
     private State currentState;
     private State initialState;
     private State finalState;
-
     private Set<State> visitedStates;
 
     private int numberOfRods;
     private int numberOfDisks;
 
+    private int maxTransitions;
+    private int remainingTransitions;
+    private int solvableBoundTransitions;
 
-    public TowersOfHanoiRandomSolver(int numberOfDisks, int numberOfRods) {
+
+    public TowersOfHanoiRandomSolver(int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
         this.numberOfDisks = numberOfDisks;
         this.numberOfRods = numberOfRods;
+        this.solvable = true;
+        this.maxTransitions = maxTransitions;
+        this.solvableBoundTransitions = solvableBoundTransitions;
+        this.remainingTransitions = maxTransitions;
+
         initialize(numberOfDisks, numberOfRods);
     }
 
     public void solve() {
         while (!isSolved()) {
             System.out.println(currentState.getTransition());
+            startSearchFromInitialStateIfSearchLimitHasBeenReached();
+            determineIfItIsStillSolvable();
 
-            Set<State> viableTransitions = computeViableTransitionFrom(currentState);
-            State nextState = selectNextState(viableTransitions);
-            currentState = nextState;
-            visitedStates.add(nextState);
+            Set<State> viableTransitions = computeViableTransitionsFrom(currentState);
+            if (viableTransitions.isEmpty()) {
+                System.out.println("There are no viable transitions");
+                restartSearch();
+            } else {
+                State nextState = selectNextState(viableTransitions);
+                currentState = nextState;
+                visitedStates.add(nextState);
+            }
         }
-        System.out.println(currentState.getTransition());
+
+        if (solvable) {
+            System.out.println(currentState.getTransition());
+        } else {
+            System.out.println("No solution could be found");
+        }
+    }
+
+    private void determineIfItIsStillSolvable() {
+        --solvableBoundTransitions;
+
+        if (solvableBoundTransitions < 0) {
+            solvable = false;
+        }
+    }
+
+    private void startSearchFromInitialStateIfSearchLimitHasBeenReached() {
+        if (--remainingTransitions < 0) {
+            restartSearch();
+        }
+    }
+
+    private void restartSearch() {
+        System.out.println("restarting the search from the initial position");
+        remainingTransitions = maxTransitions;
+        currentState = initialState;
+        visitedStates.clear();
     }
 
     private State selectNextState(Set<State> viableTransitions) {
@@ -37,13 +86,11 @@ public class TowersOfHanoiRandomSolver {
         return new LinkedList<>(viableTransitions).get(randomPosition);
     }
 
-    private Set<State> computeViableTransitionFrom(State currentState) {
+    private Set<State> computeViableTransitionsFrom(State currentState) {
         Set<State> possibleTransitions = new HashSet<>();
 
         for (Rod rod : currentState.getRods()) {
-//            System.out.println(rod);
             if (!rod.isEmpty()) {
-//                System.out.println(rod);
                 for (int i = 0; i < numberOfRods; i++) {
                     State nextState = new State(currentState);
                     moveDisk(nextState, rod.getNumber(), i);
@@ -59,11 +106,11 @@ public class TowersOfHanoiRandomSolver {
         return possibleTransitions
                 .stream()
                 .filter(this::hasValidConfiguration)
-                .filter(this::wasNotVisitedInThePast)
+                .filter(this::wasNotVisitedBefore)
                 .collect(Collectors.toSet());
     }
 
-    private boolean wasNotVisitedInThePast(State state) {
+    private boolean wasNotVisitedBefore(State state) {
         return !visitedStates.contains(state);
     }
 

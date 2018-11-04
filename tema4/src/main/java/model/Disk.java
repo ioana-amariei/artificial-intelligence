@@ -1,3 +1,5 @@
+package model;
+
 public class Disk {
     private int size;
 
@@ -21,7 +23,7 @@ public class Disk {
 
     @Override
     public String toString() {
-        return "Disk{" +
+        return "model.Disk{" +
                 "size=" + size +
                 '}';
     }

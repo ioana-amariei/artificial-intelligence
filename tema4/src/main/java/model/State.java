@@ -1,8 +1,11 @@
+package model;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class State {
     private List<Rod> rods;
+    // specifies the transition(move) used to reach this state
     private Transition transition;
 
     public State(List<Rod> rods) {
@@ -27,6 +30,14 @@ public class State {
 
     public void setTransition(Transition transition) {
         this.transition = transition;
+    }
+
+    @Override
+    public String toString() {
+        return "model.State{" +
+                "rods=" + rods +
+                ", transition=" + transition +
+                '}';
     }
 
     @Override
