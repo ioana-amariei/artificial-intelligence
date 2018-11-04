@@ -7,6 +7,7 @@ public class State {
     private List<Rod> rods;
     // specifies the transition(move) used to reach this state
     private Transition transition;
+    private State previous;
 
     public State(List<Rod> rods) {
         this.rods = rods;
@@ -14,29 +15,39 @@ public class State {
 
     public State(State that) {
         this.rods = new LinkedList<>();
+        this.previous = that.previous;
 
-        for (Rod rod : that.rods){
+        for (Rod rod : that.rods) {
             this.rods.add(new Rod(rod));
         }
+    }
+
+    public State getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(State previous) {
+        this.previous = previous;
     }
 
     public Transition getTransition() {
         return transition;
     }
 
-    public List<Rod> getRods() {
-        return rods;
-    }
-
     public void setTransition(Transition transition) {
         this.transition = transition;
     }
 
+    public List<Rod> getRods() {
+        return rods;
+    }
+
     @Override
     public String toString() {
-        return "model.State{" +
+        return "State{" +
                 "rods=" + rods +
                 ", transition=" + transition +
+                ", previous=" + previous +
                 '}';
     }
 

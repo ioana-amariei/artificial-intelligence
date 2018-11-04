@@ -13,6 +13,9 @@ public class RandomHanoiStrategy implements HanoiStrategy {
         int bound = states.size();
         int randomPosition = new Random(System.currentTimeMillis()).nextInt(bound);
 
-        return new LinkedList<>(states).get(randomPosition);
+        State state = new LinkedList<>(states).get(randomPosition);
+        states.remove(state);
+
+        return state;
     }
 }

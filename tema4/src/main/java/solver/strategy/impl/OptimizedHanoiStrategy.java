@@ -3,12 +3,20 @@ package solver.strategy.impl;
 import model.State;
 import solver.strategy.api.HanoiStrategy;
 
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.Set;
 
 public class OptimizedHanoiStrategy implements HanoiStrategy {
+
     @Override
     public State selectNextState(Set<State> states) {
-        //TODO: implement optimized strategy
-        return null;
+        LinkedList<State> list = new LinkedList<>(states);
+        Collections.sort(list, new StateComparator());
+
+        State state = list.get(list.size() - 1);
+        states.remove(state);
+
+        return state;
     }
 }

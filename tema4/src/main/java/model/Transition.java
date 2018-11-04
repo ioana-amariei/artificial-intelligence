@@ -13,7 +13,7 @@ public class Transition {
 
     @Override
     public String toString() {
-        return "model.Transition{" +
+        return "Transition{" +
                 "disk=" + disk +
                 ", fromRod=" + fromRod +
                 ", toRod=" + toRod +

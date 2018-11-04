@@ -6,7 +6,10 @@ import model.State;
 import model.Transition;
 import solver.strategy.api.HanoiStrategy;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class TowersOfHanoiSolver {
@@ -23,7 +26,7 @@ public class TowersOfHanoiSolver {
     private int maxTransitions;
     private int remainingTransitions;
     private int solvableBoundTransitions;
-
+    private Set<State> viableTransitions;
 
     public TowersOfHanoiSolver(HanoiStrategy solvingStrategy, int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
         this.solvingStrategy = solvingStrategy;
@@ -33,32 +36,51 @@ public class TowersOfHanoiSolver {
         this.maxTransitions = maxTransitions;
         this.solvableBoundTransitions = solvableBoundTransitions;
         this.remainingTransitions = maxTransitions;
+        this.viableTransitions = new HashSet<>();
 
         initialize(numberOfDisks, numberOfRods);
     }
 
     public void solve() {
         while (!isSolved()) {
-            System.out.println(currentState.getTransition());
+//            System.out.println(currentState.getTransition() == null ? "Initial state" : currentState.getTransition());
             startSearchFromInitialStateIfSearchLimitHasBeenReached();
             determineIfItIsStillSolvable();
 
-            Set<State> viableTransitions = computeViableTransitionsFrom(currentState);
+            Set<State> viableTransitionsFromCurrentState = computeViableTransitionsFrom(currentState);
+            viableTransitions.addAll(viableTransitionsFromCurrentState);
+
             if (viableTransitions.isEmpty()) {
                 System.out.println("There are no viable transitions");
                 restartSearch();
             } else {
                 State nextState = solvingStrategy.selectNextState(viableTransitions);
+                nextState.setPrevious(currentState);
                 currentState = nextState;
                 visitedStates.add(nextState);
             }
         }
 
         if (solvable) {
-            System.out.println(currentState.getTransition());
+//            System.out.println(currentState.getTransition());
         } else {
             System.out.println("No solution could be found");
         }
+    }
+
+    public int getSolutionLength() {
+        return getSolution().size();
+    }
+
+    public List<State> getSolution() {
+        List<State> path = new LinkedList<>();
+
+        while (currentState != null) {
+            path.add(0, currentState);
+            currentState = currentState.getPrevious();
+        }
+
+        return path;
     }
 
     private void determineIfItIsStillSolvable() {
