@@ -43,7 +43,7 @@ public class TowersOfHanoiSolver {
 
     public void solve() {
         while (!isSolved()) {
-//            System.out.println(currentState.getTransition() == null ? "Initial state" : currentState.getTransition());
+            System.out.println(currentState.getTransition() == null ? "Initial state" : currentState.getTransition());
             startSearchFromInitialStateIfSearchLimitHasBeenReached();
             determineIfItIsStillSolvable();
 
@@ -62,7 +62,7 @@ public class TowersOfHanoiSolver {
         }
 
         if (solvable) {
-//            System.out.println(currentState.getTransition());
+            System.out.println(currentState.getTransition());
         } else {
             System.out.println("No solution could be found");
         }

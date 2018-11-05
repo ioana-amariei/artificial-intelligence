@@ -1,35 +1,35 @@
-import model.State;
+import com.google.common.base.Stopwatch;
 import solver.TowersOfHanoiSolver;
-import solver.strategy.impl.OptimizedHanoiStrategy;
+import solver.strategy.api.HanoiStrategy;
 import solver.strategy.impl.RandomHanoiStrategy;
 
-import java.util.List;
+import java.time.Duration;
 
 public class Application {
     public static void main(String[] args) {
-        int numberOfDisks = 5;
-        int numberOfRods = 5;
-        int maxTransitions = (numberOfDisks + numberOfRods) * 10;
+        int numberOfDisks = 4;
+        int numberOfRods = 4;
+        int maxTransitions = 1000;
+        int solvableBoundTransitions = 100000;
 
+        Statistics statistics = runSolverAndGetStatistics(new RandomHanoiStrategy(), numberOfDisks, numberOfRods, maxTransitions, solvableBoundTransitions);
+//        statistics.printEntireStatistics();
+        statistics.printGeneralStatistics();
+    }
+
+    private static Statistics runSolverAndGetStatistics(HanoiStrategy strategy, int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
         TowersOfHanoiSolver solver =
                 new TowersOfHanoiSolver(
                         new RandomHanoiStrategy(),
                         numberOfDisks,
                         numberOfRods,
-                        10000,
-                        1000000);
+                        maxTransitions,
+                        solvableBoundTransitions);
+
+        Stopwatch stopwatch = Stopwatch.createStarted();
         solver.solve();
+        Duration duration = stopwatch.elapsed();
 
-        printSolution(solver.getSolution());
-    }
-
-    private static void printSolution(List<State> solution) {
-        System.out.println("Solution length: " + solution.size());
-
-        for(State state : solution){
-            System.out.println(state.getTransition() == null ? "Initial state" : state.getTransition());
-        }
-
-        System.out.println();
+        return new Statistics(strategy.getClass().toString(), solver.getSolution(), duration);
     }
 }
