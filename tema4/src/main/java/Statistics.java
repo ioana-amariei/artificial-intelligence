@@ -7,11 +7,13 @@ public class Statistics {
     private String strategy;
     private List<State> solution;
     private Duration duration;
+    private int testedStates;
 
-    public Statistics(String strategy, List<State> solution, Duration duration) {
+    public Statistics(String strategy, List<State> solution, Duration duration, int testedStates) {
         this.strategy = strategy;
         this.solution = solution;
         this.duration = duration;
+        this.testedStates = testedStates;
     }
 
     public String getStrategy() {
@@ -31,6 +33,7 @@ public class Statistics {
         System.out.println("Strategy: " + strategy);
         System.out.println("Duration: " + duration.toMillis() / 1000d + " seconds.");
         System.out.println("Solution length: " + solution.size());
+        System.out.println("Tested states: " + testedStates);
     }
 
     public void printEntireStatistics(){

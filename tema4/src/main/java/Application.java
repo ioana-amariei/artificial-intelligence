@@ -30,6 +30,6 @@ public class Application {
         solver.solve();
         Duration duration = stopwatch.elapsed();
 
-        return new Statistics(strategy.getClass().toString(), solver.getSolution(), duration);
+        return new Statistics(strategy.getClass().toString(), solver.getSolution(), duration, solver.getTestedStates());
     }
 }

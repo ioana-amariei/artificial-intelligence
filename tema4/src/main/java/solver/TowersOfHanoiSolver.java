@@ -28,6 +28,8 @@ public class TowersOfHanoiSolver {
     private int solvableBoundTransitions;
     private Set<State> viableTransitions;
 
+    private int testedStates;
+
     public TowersOfHanoiSolver(HanoiStrategy solvingStrategy, int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
         this.solvingStrategy = solvingStrategy;
         this.numberOfDisks = numberOfDisks;
@@ -37,6 +39,7 @@ public class TowersOfHanoiSolver {
         this.solvableBoundTransitions = solvableBoundTransitions;
         this.remainingTransitions = maxTransitions;
         this.viableTransitions = new HashSet<>();
+        this.testedStates = 0;
 
         initialize(numberOfDisks, numberOfRods);
     }
@@ -58,6 +61,7 @@ public class TowersOfHanoiSolver {
                 nextState.setPrevious(currentState);
                 currentState = nextState;
                 visitedStates.add(nextState);
+                testedStates++;
             }
         }
 
@@ -81,6 +85,10 @@ public class TowersOfHanoiSolver {
         }
 
         return path;
+    }
+
+    public int getTestedStates() {
+        return testedStates;
     }
 
     private void determineIfItIsStillSolvable() {
