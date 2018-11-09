@@ -8,9 +8,10 @@ public class State {
     // specifies the transition(move) used to reach this state
     private Transition transition;
     private State previous;
+    private int distanceFromInitialState = 0;
 
     public State(List<Rod> rods) {
-        this.rods = rods;
+        this.rods = new LinkedList<>(rods);
     }
 
     public State(State that) {
@@ -42,12 +43,19 @@ public class State {
         return rods;
     }
 
+    public int getDistanceFromInitialState() {
+        return distanceFromInitialState;
+    }
+
+    public void setDistanceFromInitialState(int distanceFromInitialState) {
+        this.distanceFromInitialState = distanceFromInitialState;
+    }
+
     @Override
     public String toString() {
         return "State{" +
                 "rods=" + rods +
                 ", transition=" + transition +
-                ", previous=" + previous +
                 '}';
     }
 

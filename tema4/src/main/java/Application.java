@@ -1,26 +1,28 @@
 import com.google.common.base.Stopwatch;
 import solver.TowersOfHanoiSolver;
 import solver.strategy.api.HanoiStrategy;
+import solver.strategy.impl.AStarHanoiStrategy;
+import solver.strategy.impl.OptimizedHanoiStrategy;
 import solver.strategy.impl.RandomHanoiStrategy;
 
 import java.time.Duration;
 
 public class Application {
     public static void main(String[] args) {
-        int numberOfDisks = 4;
+        int numberOfDisks = 6;
         int numberOfRods = 4;
-        int maxTransitions = 1000;
+        int maxTransitions = numberOfDisks * 5000;
         int solvableBoundTransitions = 100000;
 
-        Statistics statistics = runSolverAndGetStatistics(new RandomHanoiStrategy(), numberOfDisks, numberOfRods, maxTransitions, solvableBoundTransitions);
-//        statistics.printEntireStatistics();
+        Statistics statistics = runSolverAndGetStatistics(new AStarHanoiStrategy(), numberOfDisks, numberOfRods, maxTransitions, solvableBoundTransitions);
+        statistics.printEntireStatistics();
         statistics.printGeneralStatistics();
     }
 
     private static Statistics runSolverAndGetStatistics(HanoiStrategy strategy, int numberOfDisks, int numberOfRods, int maxTransitions, int solvableBoundTransitions) {
         TowersOfHanoiSolver solver =
                 new TowersOfHanoiSolver(
-                        new RandomHanoiStrategy(),
+                        strategy,
                         numberOfDisks,
                         numberOfRods,
                         maxTransitions,

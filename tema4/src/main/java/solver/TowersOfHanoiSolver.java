@@ -58,7 +58,6 @@ public class TowersOfHanoiSolver {
                 restartSearch();
             } else {
                 State nextState = solvingStrategy.selectNextState(viableTransitions);
-                nextState.setPrevious(currentState);
                 currentState = nextState;
                 visitedStates.add(nextState);
                 testedStates++;
@@ -119,7 +118,9 @@ public class TowersOfHanoiSolver {
             if (!rod.isEmpty()) {
                 for (int i = 0; i < numberOfRods; i++) {
                     State nextState = new State(currentState);
+                    nextState.setDistanceFromInitialState(currentState.getDistanceFromInitialState() + 1);
                     moveDisk(nextState, rod.getNumber(), i);
+                    nextState.setPrevious(currentState);
                     possibleTransitions.add(nextState);
                 }
             }

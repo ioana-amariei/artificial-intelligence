@@ -28,7 +28,7 @@ public class Statistics {
         return duration;
     }
 
-    public void printGeneralStatistics(){
+    public void printGeneralStatistics() {
         System.out.println();
         System.out.println("Strategy: " + strategy);
         System.out.println("Duration: " + duration.toMillis() / 1000d + " seconds.");
@@ -36,7 +36,7 @@ public class Statistics {
         System.out.println("Tested states: " + testedStates);
     }
 
-    public void printEntireStatistics(){
+    public void printEntireStatistics() {
         printGeneralStatistics();
 
         for (State state : solution) {
