@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class RandomHanoiStrategy implements HanoiStrategy {
     @Override
-    public State selectNextState(Set<State> states) {
+    public State selectNextState(State currentState, Set<State> states) {
         int bound = states.size();
         int randomPosition = new Random(System.currentTimeMillis()).nextInt(bound);
 

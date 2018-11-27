@@ -44,9 +44,13 @@ public class TowersOfHanoiSolver {
         initialize(numberOfDisks, numberOfRods);
     }
 
+    public boolean isSolvable() {
+        return solvable;
+    }
+
     public void solve() {
-        while (!isSolved()) {
-            System.out.println(currentState.getTransition() == null ? "Initial state" : currentState.getTransition());
+        while (!isSolved() && solvable) {
+//            System.out.println(currentState.getTransition() == null ? "Initial state" : currentState.getTransition());
             startSearchFromInitialStateIfSearchLimitHasBeenReached();
             determineIfItIsStillSolvable();
 
@@ -54,10 +58,13 @@ public class TowersOfHanoiSolver {
             viableTransitions.addAll(viableTransitionsFromCurrentState);
 
             if (viableTransitions.isEmpty()) {
-                System.out.println("There are no viable transitions");
+                System.out.println("There are no more viable transitions.");
                 restartSearch();
             } else {
-                State nextState = solvingStrategy.selectNextState(viableTransitions);
+                State nextState = solvingStrategy.selectNextState(currentState, viableTransitions);
+                if(nextState.equals(currentState)){
+                    solvable = false;
+                }
                 currentState = nextState;
                 visitedStates.add(nextState);
                 testedStates++;
@@ -151,7 +158,7 @@ public class TowersOfHanoiSolver {
         return true;
     }
 
-    public void moveDisk(State state, int fromRod, int toRod) {
+    private void moveDisk(State state, int fromRod, int toRod) {
         Disk disk = state.getRods().get(fromRod).removeFirst();
         state.getRods().get(toRod).add(disk);
 
@@ -159,7 +166,7 @@ public class TowersOfHanoiSolver {
         state.setTransition(transition);
     }
 
-    public boolean isSolved() {
+    private boolean isSolved() {
         return currentState.equals(finalState);
     }
 

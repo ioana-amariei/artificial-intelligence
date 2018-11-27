@@ -1,0 +1,811 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology"
+     xml:base="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:property="http://dbpedia.org/property/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://dbpedia.org/ontology/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/history-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/activeYears -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/activeYears">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+        <rdfs:label xml:lang="en">was active between</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/commander -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/commander">
+        <owl:equivalentProperty rdf:resource="http://dbpedia.org/ontology/leader"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">is a commander of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/endReign -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/endReign">
+        <rdfs:label xml:lang="en">has ended reign in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/leader -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/leader">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">is a leader of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/location -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/location">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn"/>
+        <rdfs:label xml:lang="en">has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/member -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/member">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">is a member of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/monarch -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/monarch">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <rdfs:label xml:lang="en">is a monarch of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/placeOfBurial -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/placeOfBurial">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label xml:lang="en">has place of burial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/predecessor -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/predecessor">
+        <owl:inverseOf rdf:resource="http://dbpedia.org/ontology/successor"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/page/King_of_the_Romanians"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has predecessor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/residence -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/residence">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has residence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/spouse -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/spouse">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has spouse</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/startReign -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/startReign">
+        <rdfs:label xml:lang="en">has started reign in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/successor -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/successor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+        <rdfs:label xml:lang="en">is successor of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/constructed -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/constructed">
+        <rdfs:label xml:lang="en">has constructed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/continent -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/continent">
+        <rdfs:label xml:lang="en">is on continent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/signers -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/signers">
+        <rdfs:label xml:lang="en">is a signer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasCitizenship">
+        <rdfs:label xml:lang="en">has citizenship</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasHonour">
+        <rdfs:label xml:lang="en">has honor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/PersonFunction"/>
+        <rdfs:label xml:lang="en">has occupation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOcupation"/>
+        <rdfs:label xml:lang="en">has omage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasReligion">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+        <rdfs:label xml:lang="en">has religion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#hasOmage"/>
+        <rdfs:label xml:lang="en">has title</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#has_gained_independence_in_the_face_of">
+        <rdfs:label xml:lang="en">has gained independence in the face of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#locatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <rdfs:label xml:lang="en">is located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#subjectOf">
+        <rdfs:label xml:lang="en">is subject of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Castle -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Castle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction"/>
+        <rdfs:comment>a large building formerly occupied by a ruler and fortified against attack</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Constitution -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Constitution"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Constitution_of_Romania -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Constitution_of_Romania">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Constitution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Continent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Continent"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State"/>
+        <rdfs:comment>a politically organized body of people under a single government) &quot;the state has elected a new president&quot;; &quot;African nations&quot;; &quot;students who had come to the nation&apos;s capitol&quot;; &quot;the country&apos;s largest manufacturer&quot;; &quot;an industrialized land&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HistoricalPeriod -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HistoricalPeriod">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/TimePeriod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Location -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Location">
+        <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MilitaryConflict -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MilitaryConflict"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Organisation -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Organisation"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PersonFunction -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PersonFunction"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/TimePeriod -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/TimePeriod"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/War -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/War"/>
+    
+
+
+    <!-- http://dbpedia.org/page/City -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/City"/>
+    
+
+
+    <!-- http://dbpedia.org/page/Domnitor -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/Domnitor">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/page/King_of_the_Romanians -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/King_of_the_Romanians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/page/War -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/War">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/MilitaryConflict"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/page/Category:Castles_in_Romania -->
+
+    <owl:Class rdf:about="http://dbpedia.org/page/Category:Castles_in_Romania">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Castle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Construction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire">
+        <rdfs:comment>An empire is defined as &quot;an aggregate of nations or people ruled over by an emperor or other powerful sovereign or government, usually a territory of greater extent than a kingdom, as the former British Empire, French Empire, Russian Empire, Byzantine Empire or Roman Empire.&quot; An empire can be made solely of contiguous territories such as the Austro-Hungarian Empire, or of territories far remote from the homeland, such as a colonial empire.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#King">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Land"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Nation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Honours"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Monument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/class/yago/WikicatPrincesOfHohenzollern-Sigmaringen">
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Alexandru_Ioan_Cuza -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Alexandru_Ioan_Cuza">
+        <rdf:type rdf:resource="http://dbpedia.org/page/Domnitor"/>
+        <ontology:predecessor rdf:resource="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Carol_I_of_Romania -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Carol_I_of_Romania">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdf:type rdf:resource="http://dbpedia.org/page/King_of_the_Romanians"/>
+        <ontology:activeYears rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+        <ontology:commander rdf:resource="http://dbpedia.org/page/Romanian_War_of_Independence"/>
+        <ontology:endReign rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+        <ontology:member rdf:resource="http://dbpedia.org/page/Romanian_Academy"/>
+        <ontology:monarch rdf:resource="http://dbpedia.org/page/Romania"/>
+        <ontology:placeOfBurial rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery"/>
+        <ontology:residence rdf:resource="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+        <ontology:spouse rdf:resource="http://dbpedia.org/page/Elisabeth_of_Wied"/>
+        <ontology:startReign rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#"/>
+        <property:constructed rdf:resource="http://dbpedia.org/page/Pele%C8%99_Castle"/>
+        <property:signers rdf:resource="http://dbpedia.org/page/1866_Constitution_of_Romania"/>
+        <untitled-ontology-10:hasCitizenship rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German"/>
+        <untitled-ontology-10:hasCitizenship rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian"/>
+        <untitled-ontology-10:hasHonour rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery"/>
+        <untitled-ontology-10:hasHonour rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania"/>
+        <untitled-ontology-10:hasOcupation rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure"/>
+        <untitled-ontology-10:hasOmage rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I"/>
+        <untitled-ontology-10:hasOmage rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I"/>
+        <untitled-ontology-10:hasReligion rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism"/>
+        <untitled-ontology-10:hasTitle rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness"/>
+        <untitled-ontology-10:hasTitle rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness"/>
+        <untitled-ontology-10:subjectOf rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Carpathian_Mountains -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Carpathian_Mountains">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <untitled-ontology-10:locatedIn rdf:resource="http://dbpedia.org/page/Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Elisabeth_of_Wied -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Elisabeth_of_Wied">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <ontology:spouse rdf:resource="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Europe -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Europe">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Ferdinand_I_of_Romania -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ferdinand_I_of_Romania">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <ontology:successor rdf:resource="http://dbpedia.org/page/Carol_I_of_Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Ottoman_Empire -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Ottoman_Empire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Empire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Romania -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Romania">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia"/>
+        <property:continent rdf:resource="http://dbpedia.org/page/Europe"/>
+        <untitled-ontology-10:has_gained_independence_in_the_face_of rdf:resource="http://dbpedia.org/page/Ottoman_Empire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Romanian_Academy -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Romanian_Academy">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Romanian_War_of_Independence -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Romanian_War_of_Independence">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/MilitaryConflict"/>
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/Russo-Turkish_War"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Russo-Turkish_War -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Russo-Turkish_War"/>
+    
+
+
+    <!-- http://dbpedia.org/page/Sinaia -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Sinaia">
+        <rdf:type rdf:resource="http://dbpedia.org/page/City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/1866_Constitution_of_Romania -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/1866_Constitution_of_Romania">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+        <owl:sameAs rdf:resource="http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/page/Pele%C8%99_Castle -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Pele%C8%99_Castle">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Castle"/>
+        <rdf:type rdf:resource="http://dbpedia.org/page/Category:Castles_in_Romania"/>
+        <untitled-ontology-10:locatedIn rdf:resource="http://dbpedia.org/page/Carpathian_Mountains"/>
+        <untitled-ontology-10:locatedIn rdf:resource="http://dbpedia.org/page/Sinaia"/>
+        <rdfs:label xml:lang="en">Peles Castle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania -->
+
+    <owl:NamedIndividual rdf:about="http://lod.openlinksw.com/describe/?uri=http://yago-knowledge.org/resource/1866_Constitution_of_Romania">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Constitution_of_Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10# -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/HistoricalPeriod"/>
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/TimePeriod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Budhism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Bulgarian_Museum_of_Carol_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Muzeum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Catholicism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Curtea_de_Arges_Monastery">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Location"/>
+        <untitled-ontology-10:locatedIn rdf:resource="http://dbpedia.org/page/Romania"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Equestrian_statue_of_Carol_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Statue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#German">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Royal_Highness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#His_Serene_Highness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Titles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Knight_Grand_Cross_of_the_Order_of_Bravery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Foreign_Honours"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Orthodoxism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#PoliticalFigure">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/PersonFunction"/>
+        <rdfs:label xml:lang="en">Political Figure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Reminiscences_of_the_King_of_Roumania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Book"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Romanian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Citizenship"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#Sovereign_Knight_Grand_Cross_with_Collar_of_the_Order_of_the_Star_of_Romania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#National_Honours"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ami/ontologies/2018/9/untitled-ontology-10#United_Principalities_of_Moldavia_and_Wallachia"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

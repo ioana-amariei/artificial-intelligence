@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class AStarHanoiStrategy implements HanoiStrategy {
     @Override
-    public State selectNextState(Set<State> states) {
+    public State selectNextState(State currentState, Set<State> states) {
         State minState = states.iterator().next();
 
         for (State state : states) {

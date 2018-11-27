@@ -1,0 +1,36 @@
+1. interfata in care deschidem pdf si marcam continutul: articol (titlu, autor, continut) -> salvam marcajele (imaginea ca atare si coordonate)
+din format => scoate date antrenament de folosit si OCR (lista atribute: colt dreapta sus, colt dreapata jos, font, etc)
+ocr - tesseract
+
+tema pt 3 sapt
+1. impartire pe submodule: 
+	- front-end (interfata adnotare + interfata ce decupeaza automat pe baza clasificatorului creat de noi): document cu aplicatii similare existente (open source) cu +/-
+		si justificare tehnologii si biblioteci alese
+	- back-end: prelucreaza output-ul trimis de front -> ocr -> atribute -> clasificatori -> trimitere inf front
+		tehnologii ce identif din imagini diverse lucruri, justificare tehnologii si biblioteci, MVC , solutii optimizare interfata-server
+		de decis formatul in care ne trimite front-ul adnotarile, alg de ml existenti justificare ()+/-
+		de decis formatul final al clasificatorilor
+	- testare: lista teste ce urm a fi facute (ce funct testam si ce erori se cauta)
+		colectare date: pregatire date de antrenare (adnotarea)
+		manual utilizare aplicatie
+	- team leader: gestionare comunicare interior echipa si exterior
+		pagina de prezentare a proiectului
+		repository
+		divergente
+		tabele cu activitatile la care a contribuit fiecare
+		
+de trimis cu 2/3 zile inainte documentatia
+	
+
+	- erori de interfata : validari
+	- mecanism prin care validam pdf (backend - validam daca ajunge ok si confirmam user-ului ca a ajuns/nu cu succes)
+	- inf privind stadiul in care se afla prelucrarea (progress bar, status etc)
+	- sa incercam mai multe metode de antrenare si vedem care merge mai bine
+	- dupa un anumit timp stergem pdf-urile ca sa nu ocpam spatiu degeaba (back)
+	- qa: stabilire limite pt aplicatie (pdf-uri extreme: zziare in format A3/A4, sensibilitate la descoperire corecta a fonturilor: latine vs asiatice, luminozitate etc)
+		- teste automate: de scalabilitate a aplicatiei, folosire app pe browser (responsive)
+
+Pana in sapt a 9-a sa fie finalizata interfata de adnotare si formatul de transimitere date intre fron si back
+Pana in sapt a 10-a front: 
+	- urcare pdf -> back si confirmare back pdf valid
+	
