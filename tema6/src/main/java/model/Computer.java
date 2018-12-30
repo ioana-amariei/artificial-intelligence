@@ -1,20 +1,24 @@
 package model;
 
-import strategy.impl.OnlyOneRockPaperScissorsStrategy;
+import strategy.api.RockPaperScissorsStrategy;
+import strategy.impl.MostFrequentMoveRockPaperScissorsStrategy;
 import strategy.impl.RandomRockPaperScissorsStrategy;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class Computer {
-    private int currentRound;
 
-    public Computer() {
-        this.currentRound = 0;
-    }
+    private Random random = new Random(System.currentTimeMillis());
 
-    public HandShape getShape() {
-        if(currentRound % 2 == 0) {
-            return new RandomRockPaperScissorsStrategy().selectNextShape();
-        } else {
-            return new OnlyOneRockPaperScissorsStrategy().selectNextShape();
-        }
+    private List<RockPaperScissorsStrategy> strategies = Arrays.asList(
+            new RandomRockPaperScissorsStrategy(),
+            new MostFrequentMoveRockPaperScissorsStrategy()
+    );
+
+    public Move getShape(List<Move> userHistory) {
+        int index = random.nextInt(strategies.size());
+        return strategies.get(index).nextMove(userHistory);
     }
 }

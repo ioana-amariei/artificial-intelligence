@@ -1,8 +1,13 @@
 package game;
 
 import model.Computer;
-import model.HandShape;
+import model.Move;
 import model.User;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static model.Move.*;
 
 public class RockPaperScissors {
     private User user;
@@ -10,6 +15,7 @@ public class RockPaperScissors {
     private int userScore;
     private int computerScore;
     private int numberOfRounds;
+    private List<Move> userHistory;
 
     public RockPaperScissors(User user, Computer computer, int numberOfRounds) {
         this.user = user;
@@ -17,18 +23,24 @@ public class RockPaperScissors {
         this.userScore = 0;
         this.computerScore = 0;
         this.numberOfRounds = numberOfRounds;
+//        this.userHistory = getTrainingSetOne();
+        this.userHistory = getTrainingSetTwo();
     }
 
-    public int getUserScore() {
-        return userScore;
+    private List<Move> getTrainingSetOne() {
+        return Arrays.asList(
+                Paper, Paper, Rock, Scissors, Scissors, Rock, Rock, Scissors, Paper, Paper,
+                Scissors, Rock, Rock, Scissors, Paper, Paper, Scissors, Rock, Rock, Paper,
+                Rock, Rock, Scissors, Paper, Paper, Scissors, Scissors, Scissors, Scissors, Rock
+        );
     }
 
-    public int getComputerScore() {
-        return computerScore;
-    }
-
-    public int getNumberOfRounds() {
-        return numberOfRounds;
+    private List<Move> getTrainingSetTwo() {
+        return Arrays.asList(
+                Rock, Paper, Rock, Scissors, Scissors, Rock, Rock, Scissors, Paper, Rock,
+                Scissors, Rock, Rock, Scissors, Rock, Paper, Rock, Rock, Rock, Paper,
+                Rock, Rock, Scissors, Paper, Paper, Rock, Scissors, Rock, Rock, Rock
+        );
     }
 
     public void play() {
@@ -37,36 +49,36 @@ public class RockPaperScissors {
         while (numberOfRounds > 0) {
             System.out.println("Rock, paper, or scissors? [R | P | S]");
 
-            HandShape userShape = user.getShape();
+            Move userShape = user.getShape();
             System.out.println("Your choice: " + userShape.toString());
 
-            HandShape computerShape = computer.getShape();
+            Move computerShape = computer.getShape(userHistory);
             System.out.println("Computer's choice: " + computerShape.toString());
 
             int compareMoves = userShape.compareMoves(computerShape);
-            switch (compareMoves) {
-                case 0:
-                    System.out.println("Tie!");
-                    break;
-                case 1:
-                    System.out.println(userShape + " beats " + computerShape);
-                    userScore++;
-                    break;
-                case -1:
-                    System.out.println(computerShape + " beats " + userShape);
-                    computerScore++;
-                    break;
+
+            if (compareMoves == 0) {
+                System.out.println("Tie!");
+
+            } else if (compareMoves == 1) {
+                System.out.println(userShape + " beats " + computerShape);
+                userScore++;
+
+            } else if (compareMoves == -1) {
+                System.out.println(computerShape + " beats " + userShape);
+                computerScore++;
+
             }
 
-            displayCurrentScore();
             --numberOfRounds;
+            displayCurrentScore();
         }
 
         end();
     }
 
-    private void start(){
-        System.out.println("------------ROCK, PAPER, SCISSORS!------------");
+    private void start() {
+        System.out.println("------------ROCK, PAPER, SCISSORS------------");
         displayCurrentScore();
     }
 
@@ -74,10 +86,10 @@ public class RockPaperScissors {
         displayResults();
     }
 
-    private void displayResults(){
+    private void displayResults() {
         displayCurrentScore();
 
-        if(userScore > computerScore) {
+        if (userScore > computerScore) {
             System.out.println("User won with a score of " + userScore + " points");
         } else if (userScore < computerScore) {
             System.out.println("Computer won with a score of " + computerScore + " points");
@@ -86,9 +98,9 @@ public class RockPaperScissors {
         }
     }
 
-    private void displayCurrentScore(){
+    private void displayCurrentScore() {
         System.out.println("User score: " + userScore);
         System.out.println("Computer score: " + computerScore);
-        System.out.println("----------------------------------------------");
+        System.out.println("---------------------------------------------");
     }
 }

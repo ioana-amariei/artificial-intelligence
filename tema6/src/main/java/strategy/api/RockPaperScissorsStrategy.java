@@ -1,7 +1,9 @@
 package strategy.api;
 
-import model.HandShape;
+import model.Move;
+
+import java.util.List;
 
 public interface RockPaperScissorsStrategy {
-    HandShape selectNextShape();
+    Move nextMove(List<Move> history);
 }
