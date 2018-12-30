@@ -2,6 +2,7 @@ package model;
 
 import strategy.api.RockPaperScissorsStrategy;
 import strategy.impl.MostFrequentMoveRockPaperScissorsStrategy;
+import strategy.impl.ProbabilityBasedRockPaperScissorsStrategy;
 import strategy.impl.RandomRockPaperScissorsStrategy;
 
 import java.util.Arrays;
@@ -14,7 +15,8 @@ public class Computer {
 
     private List<RockPaperScissorsStrategy> strategies = Arrays.asList(
             new RandomRockPaperScissorsStrategy(),
-            new MostFrequentMoveRockPaperScissorsStrategy()
+            new MostFrequentMoveRockPaperScissorsStrategy(),
+            new ProbabilityBasedRockPaperScissorsStrategy()
     );
 
     public Move getShape(List<Move> userHistory) {

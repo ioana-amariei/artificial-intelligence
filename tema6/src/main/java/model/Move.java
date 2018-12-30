@@ -12,10 +12,10 @@ public enum Move {
         this.value = value;
     }
 
-    public static Move getMoveThatBeats(Move key) {
-        if (key == Rock) {
+    public static Move getMoveThatBeats(Move move) {
+        if (move == Rock) {
             return Paper;
-        } else if (key == Paper) {
+        } else if (move == Paper) {
             return Scissors;
         } else {
             return Rock;
