@@ -5,6 +5,7 @@ import solver.strategy.api.HanoiStrategy;
 
 import java.util.Set;
 
+//selects the state that minimizes f(n)=g(n)+h(n)
 public class AStarHanoiStrategy implements HanoiStrategy {
     @Override
     public State selectNextState(State currentState, Set<State> states) {
